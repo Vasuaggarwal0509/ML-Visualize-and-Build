@@ -21,5 +21,5 @@ EXPOSE 5000 1234
 # Run ZenML setup (optional)
 RUN zenml init
 
-# Command to run your deployment script
-CMD ["python", "run_deployment.py"]
+# Command to run your pipeline script
+CMD ["python", "run_pipeline.py"]

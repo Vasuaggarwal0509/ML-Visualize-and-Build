@@ -1,20 +1,20 @@
 import logging
 from typing import Annotated
-import xgboost as XGBRegressor # type: ignore
-from sklearn.svm import SVR # type: ignore
-from sklearn.preprocessing import StandardScaler # type: ignore
-from sklearn.tree import DecisionTreeRegressor # type: ignore
-from sklearn.ensemble import RandomForestRegressor # type: ignore
-import mlflow # type: ignore
-import pandas as pd # type: ignore
-from sklearn.base import RegressorMixin # type: ignore
-from sklearn.compose import ColumnTransformer # type: ignore
-from sklearn.impute import SimpleImputer # type: ignore
-from sklearn.linear_model import LinearRegression # type: ignore
-from sklearn.pipeline import Pipeline # type: ignore
-from sklearn.preprocessing import OneHotEncoder # type: ignore
-from zenml import ArtifactConfig, step # type: ignore
-from zenml.client import Client # type: ignore
+from xgboost import XGBRegressor 
+from sklearn.svm import SVR
+from sklearn.preprocessing import StandardScaler 
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor 
+import mlflow 
+import pandas as pd 
+from sklearn.base import RegressorMixin 
+from sklearn.compose import ColumnTransformer 
+from sklearn.impute import SimpleImputer 
+from sklearn.linear_model import LinearRegression
+from sklearn.pipeline import Pipeline 
+from sklearn.preprocessing import OneHotEncoder 
+from zenml import ArtifactConfig, step 
+from zenml.client import Client 
 
 # Get the active experiment tracker from ZenML
 experiment_tracker = Client().active_stack.experiment_tracker
